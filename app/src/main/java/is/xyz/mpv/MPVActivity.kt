@@ -290,6 +290,13 @@ class MPVActivity : AppCompatActivity(), MPVLib.EventObserver, TouchGesturesObse
             return
         }
 
+        // Remind user if they forgot to set up youtube-dl
+        if (!filepath.startsWith("/") && !filepath.substringAfterLast('/').contains('.')) {
+            if (!File("${filesDir.path}/youtube-dl").exists()) {
+                showToast(getString(R.string.toast_need_ytdl), long = true)
+            }
+        }
+
         player.initialize(applicationContext.filesDir.path, applicationContext.cacheDir.path)
         player.addObserver(this)
         player.playFile(filepath)
@@ -887,10 +894,10 @@ class MPVActivity : AppCompatActivity(), MPVLib.EventObserver, TouchGesturesObse
     private fun playlistPrev() = MPVLib.command(arrayOf("playlist-prev"))
     private fun playlistNext() = MPVLib.command(arrayOf("playlist-next"))
 
-    private fun showToast(msg: String, cancel: Boolean = false) {
+    private fun showToast(msg: String, cancel: Boolean = false, long: Boolean = false) {
         if (cancel)
             toast?.cancel()
-        toast = Toast.makeText(this, msg, Toast.LENGTH_SHORT).apply {
+        toast = Toast.makeText(this, msg, if (long) Toast.LENGTH_LONG else Toast.LENGTH_SHORT).apply {
             setGravity(Gravity.TOP or Gravity.CENTER_HORIZONTAL, 0, 0)
             show()
         }
