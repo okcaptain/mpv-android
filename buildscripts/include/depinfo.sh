@@ -16,6 +16,8 @@ v_harfbuzz=8.4.0
 v_fribidi=1.0.13
 v_freetype=2-13-2
 v_mbedtls=3.5.2
+v_openssl=3.0.13
+v_python=3.9.19
 
 
 ## Dependency tree
@@ -32,7 +34,9 @@ dep_libass=(freetype2 fribidi harfbuzz unibreak)
 dep_lua=()
 dep_libplacebo=()
 dep_mpv=(ffmpeg libass lua libplacebo)
-dep_mpv_android=(mpv)
+dep_openssl=()
+dep_python=(openssl)
+dep_mpv_android=(mpv python)
 
 
 ## Travis-related
