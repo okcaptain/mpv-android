@@ -20,6 +20,7 @@ android {
     productFlavors {
         "default" {
             isDefault true
+            applicationIdSuffix ".ytdl"
         }
         /*api29 {
             targetSdkVersion 29
