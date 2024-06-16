@@ -36,7 +36,7 @@ build_prefix() {
 	# build everything mpv depends on (but not mpv itself)
 	for x in ${dep_mpv[@]}; do
 		msg "Building $x"
-		./buildall.sh $x
+		./buildall.sh --arch arm64 $x
 	done
 
 	if [[ "$CACHE_MODE" == github && -n "$GITHUB_TOKEN" ]]; then
