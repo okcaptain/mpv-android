@@ -89,6 +89,6 @@ msg "Building mpv"
 }
 
 msg "Building mpv-android"
-./buildall.sh -n
+./buildall.sh -n --arch arm64
 
 exit 0
