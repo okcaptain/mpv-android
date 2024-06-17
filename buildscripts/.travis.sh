@@ -63,7 +63,7 @@ if [ "$1" == "install" ]; then
 	fi
 
 	msg "Fetching SDK + NDK"
-	TRAVIS=1 ./include/download-sdk.sh
+	TRAVIS=0 ./include/download-sdk.sh
 
 	msg "Fetching mpv"
 	mkdir -p deps/mpv
