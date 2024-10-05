@@ -125,6 +125,7 @@ build () {
 		pushd deps/$1
 		BUILDSCRIPT=../../scripts/$1.sh
 	fi
+	chmod +x $BUILDSCRIPT
 	[ $cleanbuild -eq 1 ] && $BUILDSCRIPT clean
 	$BUILDSCRIPT build
 	popd

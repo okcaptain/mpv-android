@@ -15,6 +15,7 @@ v_harfbuzz=10.0.1
 v_fribidi=1.0.16
 v_freetype=2-13-3
 v_mbedtls=3.6.1
+v_libxml2=2.13.3
 
 
 ## Dependency tree
@@ -22,7 +23,7 @@ v_mbedtls=3.6.1
 
 dep_mbedtls=()
 dep_dav1d=()
-dep_ffmpeg=(mbedtls dav1d)
+dep_ffmpeg=(mbedtls dav1d libxml2)
 dep_freetype2=()
 dep_fribidi=()
 dep_harfbuzz=()
