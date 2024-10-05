@@ -55,6 +55,12 @@ LOCAL_EXPORT_C_INCLUDES := $(PREFIX)/include
 include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libxml2
+LOCAL_SRC_FILES := $(PREFIX)/lib/$(LOCAL_MODULE).so
+LOCAL_EXPORT_C_INCLUDES := $(PREFIX)/include
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libmpv
 LOCAL_SRC_FILES := $(PREFIX)/lib/libmpv.so
 LOCAL_EXPORT_C_INCLUDES := $(PREFIX)/include
@@ -62,7 +68,7 @@ include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE    := libplayer
+LOCAL_MODULE    := libmpvplayer
 LOCAL_CFLAGS    := -Werror
 LOCAL_CPPFLAGS  += -std=c++11
 LOCAL_SRC_FILES := \

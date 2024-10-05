@@ -14,7 +14,7 @@ import androidx.annotation.NonNull;
 public class MPVLib {
 
      static {
-        String[] libs = { "mpv", "player" };
+        String[] libs = { "mpv", "mpvplayer" };
         for (String lib: libs) {
             System.loadLibrary(lib);
         }
