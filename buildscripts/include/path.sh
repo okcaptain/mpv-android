@@ -29,4 +29,7 @@ toolchain=$(echo "$DIR/sdk/android-ndk-${v_ndk}/toolchains/llvm/prebuilt/"*)
 [ -d "$toolchain" ] && \
 	export PATH="$toolchain/bin:$DIR/sdk/android-ndk-${v_ndk}:$DIR/sdk/bin:$PATH"
 export ANDROID_HOME="$DIR/sdk/android-sdk-$os"
-unset ANDROID_SDK_ROOT ANDROID_NDK_ROOT
+export ANDROID_NDK_ROOT="$DIR/sdk/android-ndk-${v_ndk}"
+unset ANDROID_SDK_ROOT
+
+ls -al $ANDROID_HOME/cmake/3.18.1/bin/cmake

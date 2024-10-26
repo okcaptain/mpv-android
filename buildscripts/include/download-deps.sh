@@ -24,6 +24,11 @@ if [ ! -d libxml2 ]; then
 		tar -xz -C libxml2 --strip-components=1
 fi
 
+# libuavs3d
+if [ ! -d libuavs3d ]; then
+	git clone https://github.com/okcaptain/uavs3d.git uavs3d
+fi
+
 # ffmpeg
 if [ ! -d ffmpeg ]; then
 	git clone https://github.com/FFmpeg/FFmpeg ffmpeg

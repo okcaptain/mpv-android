@@ -28,7 +28,7 @@ args=(
 	--arch=${ndk_triple%%-*} --cpu=$cpu
 	--extra-cflags="-I$prefix_dir/include $cpuflags" --extra-ldflags="-L$prefix_dir/lib"
 
-	--enable-{jni,mediacodec,mbedtls,libdav1d,libxml2} --disable-vulkan
+	--enable-{demuxers,decoders,parsers,jni,mediacodec,mbedtls,libdav1d,libxml2,libuavs3d} --disable-vulkan
 	--disable-static --enable-shared --enable-{gpl,version3}
 
 	# disable unneeded parts
@@ -39,9 +39,9 @@ args=(
 	--disable-{muxers,encoders,devices}
 	# useful to taking screenshots
 	--enable-encoder=mjpeg,png
-	--enable-demuxer=dash
 	# useful for the `dump-cache` command
 	--enable-muxer=mov,matroska,mpegts
+	--disable-demuxer=loas
 )
 ../configure "${args[@]}"
 
