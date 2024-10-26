@@ -26,7 +26,7 @@ fi
 
 # libuavs3d
 if [ ! -d libuavs3d ]; then
-	git clone https://github.com/okcaptain/uavs3d.git uavs3d
+	git clone https://github.com/okcaptain/uavs3d.git libuavs3d
 fi
 
 # ffmpeg
