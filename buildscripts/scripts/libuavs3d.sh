@@ -10,7 +10,7 @@ elif [ "$1" == "clean" ]; then
 else
 	exit 255
 fi
-FF_ANDROID_PLATFORM=19
+FF_ANDROID_PLATFORM=21
 FF_ANDROID_ABI=armeabi-v7a
 [[ "$ndk_triple" == "aarch64"* ]] && FF_ANDROID_ABI=arm64-v8a
 [[ "$ndk_triple" == "x86_64"* ]] && FF_ANDROID_ABI=x86_64
