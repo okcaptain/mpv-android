@@ -42,6 +42,7 @@ args=(
 	# useful for the `dump-cache` command
 	--enable-muxer=mov,matroska,mpegts
 	--disable-demuxer=loas
+	--disable-demuxer=image*
 )
 ../configure "${args[@]}"
 
