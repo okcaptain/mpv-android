@@ -10,13 +10,16 @@ elif [ "$1" == "clean" ]; then
 else
 	exit 255
 fi
-FF_ANDROID_PLATFORM=21
+FF_ANDROID_PLATFORM=android-21
 FF_ANDROID_ABI=armeabi-v7a
 [[ "$ndk_triple" == "aarch64"* ]] && FF_ANDROID_ABI=arm64-v8a
 [[ "$ndk_triple" == "x86_64"* ]] && FF_ANDROID_ABI=x86_64
 [[ "$ndk_triple" == "i686"* ]] && FF_ANDROID_ABI=x86
 
 CMAKE_EXECUTABLE=$ANDROID_HOME/cmake/3.18.1/bin/cmake
+
+echo $ANDROID_NDK_ROOT
+echo $FF_ANDROID_ABI
 
 $CMAKE_EXECUTABLE . \
  -DCMAKE_VERBOSE_MAKEFILE=ON \
