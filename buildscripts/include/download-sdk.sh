@@ -77,7 +77,7 @@ elif [ -z "${os_ndk}" ]; then
 	ln -s "android-sdk-$os/ndk/${v_ndk_n}" "android-ndk-${v_ndk}"
 else
 	echo "Downloading NDK."
-	$WGET "http://dl.google.com/android/repository/android-ndk-${v_ndk}-${os_ndk}.zip"
+	$WGET "http://dl.google.com/android/repository/android-ndk-${v_ndk}-${os_ndk}-x86_64.zip"
 	unzip -q "android-ndk-${v_ndk}-${os_ndk}.zip"
 	rm "android-ndk-${v_ndk}-${os_ndk}.zip"
 fi
