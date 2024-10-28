@@ -29,7 +29,7 @@ if [ "$os" == "linux" ]; then
 		exit 255
 	fi
 
-	os_ndk="linux"
+	os_ndk="linux-x86_64"
 elif [ "$os" == "mac" ]; then
 	if [ $IN_CI -eq 0 ]; then
 		if ! hash brew 2>/dev/null; then
@@ -77,7 +77,7 @@ elif [ -z "${os_ndk}" ]; then
 	ln -s "android-sdk-$os/ndk/${v_ndk_n}" "android-ndk-${v_ndk}"
 else
 	echo "Downloading NDK."
-	$WGET "http://dl.google.com/android/repository/android-ndk-${v_ndk}-${os_ndk}-x86_64.zip"
+	$WGET "http://dl.google.com/android/repository/android-ndk-${v_ndk}-${os_ndk}.zip"
 	unzip -q "android-ndk-${v_ndk}-${os_ndk}.zip"
 	rm "android-ndk-${v_ndk}-${os_ndk}.zip"
 fi
