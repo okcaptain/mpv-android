@@ -21,7 +21,7 @@ CMAKE_EXECUTABLE=$ANDROID_HOME/cmake/3.18.1/bin/cmake
 echo $ANDROID_NDK_ROOT
 echo $FF_ANDROID_ABI
 
-cat $ANDROID_NDK_ROOT/build/cmake/android.toolchain.cmake
+cat $ANDROID_NDK_ROOT/build/cmake/android-legacy.toolchain.cmake
 
 $CMAKE_EXECUTABLE . \
  -DCMAKE_VERBOSE_MAKEFILE=ON \
