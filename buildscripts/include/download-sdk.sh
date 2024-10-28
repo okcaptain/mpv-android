@@ -29,7 +29,7 @@ if [ "$os" == "linux" ]; then
 		exit 255
 	fi
 
-	os_ndk="linux"
+	os_ndk="linux-x86_64"
 elif [ "$os" == "mac" ]; then
 	if [ $IN_CI -eq 0 ]; then
 		if ! hash brew 2>/dev/null; then
