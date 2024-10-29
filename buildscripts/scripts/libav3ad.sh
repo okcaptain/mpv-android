@@ -21,7 +21,6 @@ CMAKE_EXECUTABLE=$ANDROID_HOME/cmake/3.18.1/bin/cmake
 echo $ANDROID_NDK_ROOT
 echo $FF_ANDROID_ABI
 
-cat $prefix_dir/lib/pkgconfig/av3ad.pc
 
 $CMAKE_EXECUTABLE . \
  -DCMAKE_VERBOSE_MAKEFILE=ON \
@@ -37,3 +36,6 @@ $CMAKE_EXECUTABLE . \
 
 make -j$cores
 make install
+
+
+cat $prefix_dir/lib/pkgconfig/av3ad.pc
