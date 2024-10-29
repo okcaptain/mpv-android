@@ -28,7 +28,7 @@ args=(
 	--arch=${ndk_triple%%-*} --cpu=$cpu
 	--extra-cflags="-I$prefix_dir/include $cpuflags" --extra-ldflags="-L$prefix_dir/lib"
 
-	--enable-{demuxers,decoders,parsers,jni,mediacodec,mbedtls,libdav1d,libxml2,libuavs3d} --disable-vulkan
+	--enable-{demuxers,decoders,parsers,jni,mediacodec,mbedtls,libdav1d,libxml2,libuavs3d,libav3ad} --disable-vulkan
 	--disable-static --enable-shared --enable-{gpl,version3,nonfree}
 
 	# disable unneeded parts
