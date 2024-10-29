@@ -41,7 +41,7 @@ args=(
 	--enable-encoder=mjpeg,png
 	# useful for the `dump-cache` command
 	--enable-muxer=mov,matroska,mpegts
-	--disable-demuxer=loas
+	--disable-demuxer=loas,av3a
 	--disable-demuxer=image*
 )
 ../configure "${args[@]}"
