@@ -15,8 +15,7 @@ mkdir -p _build$ndk_suffix
 cd _build$ndk_suffix
 
 ../autogen.sh \
-	--host=$ndk_triple --without-python \
-	--enable-static --disable-shared
+	--host=$ndk_triple --without-python
 
 make -j$cores
 make DESTDIR="$prefix_dir" install
