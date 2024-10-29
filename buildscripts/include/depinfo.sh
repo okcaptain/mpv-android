@@ -22,9 +22,8 @@ v_libxml2=2.13.3
 # I would've used a dict but putting arrays in a dict is not a thing
 
 dep_libuavs3d=()
-dep_libav3ad=()
 dep_dav1d=()
-dep_ffmpeg=(libuavs3d libav3ad libxml2 mbedtls dav1d)
+dep_ffmpeg=(libuavs3d libxml2 mbedtls dav1d)
 dep_freetype2=()
 dep_fribidi=()
 dep_harfbuzz=()
