@@ -16,12 +16,6 @@ jobs:
       - name: Export env vars
         run: buildscripts/include/ci.sh export >>$GITHUB_ENV
 
-      - uses: actions/cache@v4
-        with:
-          path: gh-cache/
-          key: "${{ env.CACHE_IDENTIFIER }}"
-          enableCrossOsArchive: true
-
       - name: Install deps
         run: |
           sudo apt-get update
