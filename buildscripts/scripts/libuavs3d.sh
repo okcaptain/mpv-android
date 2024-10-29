@@ -36,3 +36,6 @@ $CMAKE_EXECUTABLE . \
 
 make -j$cores
 make install
+
+
+cat $prefix_dir/lib/pkgconfig/uavs3d.pc
