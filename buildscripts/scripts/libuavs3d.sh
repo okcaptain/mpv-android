@@ -35,4 +35,4 @@ $CMAKE_EXECUTABLE . \
  -DCOMPILE_10BIT=1
 
 make -j$cores
-make DESTDIR="$prefix_dir" install
+make install

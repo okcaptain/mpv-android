@@ -34,4 +34,4 @@ $CMAKE_EXECUTABLE . \
  -DCMAKE_INSTALL_PREFIX=$prefix_dir
 
 make -j$cores
-make DESTDIR="$prefix_dir" install
+make install
