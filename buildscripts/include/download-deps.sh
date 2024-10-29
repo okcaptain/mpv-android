@@ -29,6 +29,11 @@ if [ ! -d libuavs3d ]; then
 	git clone https://github.com/okcaptain/uavs3d.git libuavs3d
 fi
 
+# av3a
+if [ ! -d libavs3a ]; then
+	git clone https://github.com/okcaptain/avs3a.git libavs3a
+fi
+
 # ffmpeg
 if [ ! -d ffmpeg ]; then
 	git clone https://github.com/okcaptain/FFmpeg ffmpeg
