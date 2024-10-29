@@ -29,7 +29,7 @@ args=(
 	--extra-cflags="-I$prefix_dir/include $cpuflags" --extra-ldflags="-L$prefix_dir/lib"
 
 	--enable-{demuxers,decoders,parsers,jni,mediacodec,mbedtls,libdav1d,libxml2,libuavs3d} --disable-vulkan
-	--disable-static --enable-shared --enable-{gpl,version3}
+	--disable-static --enable-shared --enable-{gpl,version3,nonfree}
 
 	# disable unneeded parts
 	--disable-{stripping,doc,programs}
