@@ -14,7 +14,7 @@ fi
 mkdir -p _build$ndk_suffix
 cd _build$ndk_suffix
 
-../configure \
+../autogen.sh \
 	--host=$ndk_triple --without-python \
 	--enable-static --disable-shared
 
