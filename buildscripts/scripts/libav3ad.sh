@@ -30,8 +30,7 @@ $CMAKE_EXECUTABLE . \
  -DANDROID_NDK=$ANDROID_NDK_ROOT \
  -DCMAKE_ANDROID_NDK=$ANDROID_NDK_ROOT \
  -DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK_ROOT/build/cmake/android.toolchain.cmake \
- -DCMAKE_INSTALL_PREFIX=$prefix_dir \
- -DBUILD_SHARED_LIBS=1
+ -DCMAKE_INSTALL_PREFIX=$prefix_dir
 
 make -j$cores
 make install

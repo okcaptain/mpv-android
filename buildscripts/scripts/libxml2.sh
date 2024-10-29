@@ -11,7 +11,7 @@ else
 	exit 255
 fi
 
-./autogen.sh --host=$ndk_triple --without-python
+./autogen.sh --host=$ndk_triple --enable-static --disable-shared --without-python
 
 make -j$cores
 make DESTDIR="$prefix_dir" install

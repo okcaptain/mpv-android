@@ -21,7 +21,8 @@ v_libxml2=2.13.3
 ## Dependency tree
 # I would've used a dict but putting arrays in a dict is not a thing
 
-dep_mbedtls=()
+dep_libuavs3d=()
+dep_libav3ad=()
 dep_dav1d=()
 dep_ffmpeg=(mbedtls dav1d libxml2 libuavs3d libav3ad)
 dep_freetype2=()
