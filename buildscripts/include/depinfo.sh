@@ -23,7 +23,7 @@ v_libxml2=2.13.3
 
 dep_mbedtls=()
 dep_dav1d=()
-dep_ffmpeg=(mbedtls dav1d libxml2 libuavs3d libavs3ad)
+dep_ffmpeg=(mbedtls dav1d libxml2 libuavs3d libav3ad)
 dep_freetype2=()
 dep_fribidi=()
 dep_harfbuzz=()

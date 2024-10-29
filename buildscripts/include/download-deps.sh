@@ -30,8 +30,8 @@ if [ ! -d libuavs3d ]; then
 fi
 
 # av3a
-if [ ! -d libavs3ad ]; then
-	git clone https://github.com/okcaptain/avs3a.git libavs3ad
+if [ ! -d libav3ad ]; then
+	git clone https://github.com/okcaptain/avs3a.git libav3ad
 fi
 
 # ffmpeg
