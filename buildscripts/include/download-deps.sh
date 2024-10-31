@@ -36,7 +36,7 @@ fi
 
 # ffmpeg
 if [ ! -d ffmpeg ]; then
-	git clone https://github.com/okcaptain/FFmpeg ffmpeg
+	git clone https://github.com/okcaptain/okjack-ffmpeg ffmpeg
 	[ $IN_CI -eq 1 ] && git -C ffmpeg checkout $v_ci_ffmpeg
 fi
 
