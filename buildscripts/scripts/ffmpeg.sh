@@ -43,6 +43,8 @@ args=(
 	--enable-muxer=mov,matroska,mpegts
 	--disable-demuxer=loas
 	--disable-demuxer=image*
+	--enable-hwaccels
+	--enable-hwaccel=h264_mediacodec,hevc_mediacodec,mpeg4_mediacodec
 )
 ../configure "${args[@]}"
 
