@@ -39,7 +39,7 @@ dep_mpv_android=(mpv)
 ## for CI workflow
 
 # pinned ffmpeg revision
-v_ci_ffmpeg=okjack-mpv-20241031
+v_ci_ffmpeg=okjack6.0-nextlib
 
 # filename used to uniquely identify a build prefix
 ci_tarball="prefix-ndk-${v_ndk}-lua-${v_lua}-unibreak-${v_unibreak}-harfbuzz-${v_harfbuzz}-fribidi-${v_fribidi}-freetype-${v_freetype}-mbedtls-${v_mbedtls}-ffmpeg-${v_ci_ffmpeg}.tgz"
